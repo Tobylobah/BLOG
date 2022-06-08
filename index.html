@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>blog</title>
+  <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -18,8 +20,15 @@
      
     
   }
+  .footer-a{
+    color: white;
+  }
+  .footer-a:hover{
+    color: white;
+  }
+ 
+ 
   .card-cover {
-        
         width: 500px;
         height:700px;
         margin-left: 400px;
@@ -43,14 +52,56 @@
 .para{
   color:green;
  }
+ @media(max-width:450px){
+   body{
+   
+   }
+.img-body{
+  width:100%;
+}
+.img-body{
+  height:1000px;
+}
+.img-logo{
+ width:70px; 
+}
+.title-header{
+  text-align: center;
+  font-size:12px;
+  padding-right: 120px;
+  display: none;
+}
+#bott{
+ width:100px;
+ height:30px;
+ font-size: 12px;
+
+}
+#bott2{
+ width:100px;
+ height:30px;
+ font-size: 12px;
+margin-right: 80px;
+}
+.navbar-toggler-icon{
+  margin-right: 60px;
+
+}
+
+.mono-header{
+
+  padding-bottom: 30px;
+}
+ }
+
+
 </style>
 <body>
   
      
   <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
-  
         <div class="container-fluid">
-          <a class="navbar-brand" href="javascript:void(0)"><img style="width:70px" src="images/news logo.png"></a>
+          <a class="navbar-brand" href="javascript:void(0)"><img class="img-logo" style="width:70px" src="images/news logo.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -92,8 +143,8 @@
         </nav>
       </div>
         <br>
-        <div class="d-flex p-3 justify-content-between">
-            <div class="offcanvas offcanvas-start" id="demo">
+        <div id="flex" class="d-flex p-3 justify-content-between">
+            <div style="width:300px" class="offcanvas offcanvas-start" id="demo">
               <div class="offcanvas-header">
                 <h4 style="font-family:cursive" class="offcanvas-title">TODAY'S TOP NEWS</h1>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
@@ -175,13 +226,13 @@
             
             
             <!-- Button to open the offcanvas sidebar -->
-            <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            <button  id="bott" class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
             TOP STORIES
             </button>
               <div>
-            <h3 id="home">REPORTING GLOBAL STORIES</h3>
+            <h3 class="title-header" id="home">REPORTING GLOBAL STORIES</h3>
               </div>
-              <div class="offcanvas offcanvas-start" id="demo2">
+              <div style="width:300px" class="offcanvas offcanvas-start" id="demo2">
                 <div class="offcanvas-header">
       
                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
@@ -217,7 +268,7 @@
               </div>
               
               <!-- Button to open the offcanvas sidebar -->
-              <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo2">
+              <button id="bott2" class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo2">
             SIGN IN
             
               </button>
@@ -237,7 +288,7 @@
         </div>
       </div>
     </div>
-    <div class="col-sm ">  <div class="card" style="width:300px">
+    <div class="col-sm">  <div class="card" style="width:300px">
       <img class="card-img-top" style="height:200px" src="images/head-sport.webp" alt="Card image">
       <div class="card-body">
         <h4 class="card-title ">SPORTS</h4>
@@ -245,7 +296,7 @@
         <a href="#videos" class="btn btn-success">See More</a>
       </div>
     </div></div>
-    <div class="col-sm ">  <div class="card" style="width:300px">
+    <div class="col-sm">  <div class="card" style="width:300px">
       <img class="card-img-top" style="height:200px" src="images/education.webp" alt="Card image">
       <div class="card-body">
         <h4 class="card-title">EDUCATION</h4>
@@ -271,7 +322,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm ">  <div class="card" style="width:300px">
+      <div class="col-sm">  <div class="card" style="width:300px">
         <img class="card-img-top" style="height:200px" src="images/head-sport.webp" alt="Card image">
         <div class="card-body">
           <h4 class="card-title ">ENTERTAINMENT</h4>
@@ -279,7 +330,7 @@
           <a href="entertainment.html" class="btn btn-success">See More</a>
         </div>
       </div></div>
-      <div class="col-sm ">  <div class="card" style="width:300px">
+      <div class="col-sm">  <div class="card" style="width:300px">
         <img class="card-img-top" style="height:200px" src="images/education.webp" alt="Card image">
         <div class="card-body">
           <h4 class="card-title">POLITICS</h4>
@@ -313,7 +364,7 @@
       <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
         <div class="card-body">
           <div class="d-flex justify-content-around"><div>
-            <img src="images/Queen-Elizabeth-II.jpg" style="width:100px">
+            <img  class="rounded" src="images/Queen-Elizabeth-II.jpg" style="width:60px;height:50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
           <div>
          <a ref="#">Prelate’s abduction: Army denies  complicity, experts demand probe
@@ -331,7 +382,7 @@
       </div>
       <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
         <div class="card-body"> <div class="d-flex justify-content-around"><div>
-          <img src="images/SPORT.jpg" style="width:100px">
+          <img src="images/SPORT.jpg" class="rounded" style="width:60px;height:50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
         <div>
         <a href="#">Wike visits Atiku as PDP shops for Southern running mate
@@ -350,7 +401,7 @@
       <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
         <div class="card-body">
           <div class="d-flex justify-content-around"><div>
-            <img src="images/PRESIDO.jpg" style="width:100px">
+            <img src="images/PRESIDO.jpg" class="rounded" style="width:60px;height:50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
           <div>
          <a href="#">Divorce-seeking wife beats husband to pulp in Lagos
@@ -377,7 +428,7 @@
       </div>
       <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
         <div class="card-body"> <div class="d-flex justify-content-around"><div>
-          <img src="images/Samuel-Uche.jpg" style="width:100px">
+          <img src="images/Samuel-Uche.jpg" class="rounded" style="width:60px;height:50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
         <div>
          <a href="#"> Kalu recommends consensus presidential candidate for Buhari</a>
@@ -395,7 +446,7 @@
       <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
         <div class="card-body">
           <div class="d-flex justify-content-around"><div>
-            <img src="images/PDP.jpg" style="width:100px">
+            <img src="images/PDP.jpg" class="rounded" style="width:60px;height:50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
           <div>
   <a href="#" >Suspended Accountant-General released from EFCC custody</a>
@@ -413,7 +464,7 @@
       <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
         <div class="card-body">
           <div class="d-flex justify-content-around"><div>
-            <img src="images/MOVIE.jpg" style="width:100px">
+            <img src="images/MOVIE.jpg" class="rounded" style="width:60px;height:50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
           <div>
         <a href="#">FCT generates N200bn annually, aims to surpass Lagos- Minister</a>
@@ -438,7 +489,7 @@
           <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
             <div class="card-body">
               <div class="d-flex"><div>
-                <img src="images/education.webp" style="width:100px">&nbsp;
+                <img src="images/education.webp" class="rounded" style="width:60px;height:50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
               <div>
              <a  href="#">Prelate’s abduction: Army denies complicity, experts demand probe
@@ -457,7 +508,7 @@
           <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
             <div class="card-body">
               <div class="d-flex justify-content-around"><div>
-                <img src="images/Queen-Elizabeth-II.jpg" style="width:100px">
+                <img src="images/Queen-Elizabeth-II.jpg" class="rounded" style="width:60px;height:50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
               <div>
             <a href="#">Wike visits Atiku as PDP shops for Southern running mate
@@ -476,7 +527,7 @@
           <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
             <div class="card-body">
               <div class="d-flex justify-content-around"><div>
-                <img src="images/business.jpg" style="width:100px">
+                <img src="images/business.jpg" class="rounded" style="width:60px;height:50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
               <div>
              <a href="#">Divorce-seeking wife beats husband to pulp in Lagos
@@ -502,7 +553,7 @@
       <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
         <div class="card-body">
           <div class="d-flex justify-content-around"><div>
-            <img src="images/head-sport.webp" style="width:100px">
+            <img src="images/head-sport.webp" class="rounded" style="width:60px;height:50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
           <div>
       <a href="#">
@@ -522,7 +573,7 @@
       <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
         <div class="card-body">
           <div class="d-flex justify-content-around"><div>
-            <img src="images/TECH.jpg" style="width:100px">
+            <img src="images/TECH.jpg" class="rounded" style="width:60px;height:50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
           <div>
        <a href="#">Arrest anyone seeking bail for criminals –FCT minister
@@ -541,7 +592,7 @@
       <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
         <div class="card-body">
           <div class="d-flex justify-content-around"><div>
-            <img src="images/RESCUED LEKKI MAN.webp" style="width:100px">
+            <img src="images/RESCUED LEKKI MAN.webp" class="rounded" style="width:60px;height:50px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div><div>
          <a href="#" >PUNCH Podcast: When should children be introduced to sex education?</a></div>
         </div>
@@ -556,36 +607,17 @@
 
  <h1 id="videos" style="padding-top:70px" class="text-center">TRENDING VIDEOS</h1>
  <div class="container mt-5">
-<div class="d-flex ">
-
-  <div class="ratio ratio-1x1">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/qfKfqnm5KYg" 
-    title="YouTube video player" frameborder="0" allow=
-    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-     allowfullscreen></iframe>
+   <div class="row">
+    <div class="col-sm">
+      <div class="ratio ratio-21x9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bNNtgGLEqno"
+                         title="YouTube video player" frameborder="0" allow=
+                        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                         allowfullscreen></iframe>
+      </div>
     </div>
-   
-    <br>
     &nbsp;
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-    <div class="ratio ratio-4x3">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/-3EpqUlwuzU"
-      title="YouTube video player" frameborder="0" allow=
-     "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-     picture-in-picture" allowfullscreen></iframe>
-    </div> 
-  
-    
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-    <div class="ratio ratio-16x9">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/LjtcXfz7j7c" 
-                      title="YouTube video player" frameborder="0" allow=
-                      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                       allowfullscreen></iframe>
-    </div>
-  
-    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-   
+   <div class="col-sm">
     <div class="ratio ratio-21x9">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/bNNtgGLEqno"
                        title="YouTube video player" frameborder="0" allow=
@@ -594,36 +626,56 @@
     </div>
   </div>
 </div>
-</div></div>
-</div></div>
-</div></div>
+<br>
 
-<br>
-<br>
+<div class="row">
+  <div class="col-sm">
+    <div class="ratio ratio-21x9">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/bNNtgGLEqno"
+                       title="YouTube video player" frameborder="0" allow=
+                      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                       allowfullscreen></iframe>
+    </div>
+  </div>
+  &nbsp;
+<div class="col-sm">
+    <div class="ratio ratio-21x9">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/bNNtgGLEqno"
+                       title="YouTube video player" frameborder="0" allow=
+                      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                       allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
 
 <div  class="container-fluid mt-5">
  
 <div class="row">
+
   <div  class="col-sm">
-<h3 id="sports" > <span >SPORTS<span class="mono">></span></span></h3>
+<h3 class="mono-header" id="sports" > <span >SPORTS<span class="mono">></span></span></h3>
               </h3>
        
   </div>
   
 
       <div class="col-sm">
-<a class="spotlight-story-image-wrapper" href="https://restofworld.org/2022/latin-america-startup-equity-data/">
-  <img style= width:200px  src='images/OKADA BAN2.jpg' alt="" />
+<a class="" href="">
+  <img class="img-body" style="max-width:100%;height:auto;display:block" src='images/OKADA BAN2.jpg' alt="" />
           </a> 
  <a  href="#">
-  <p>Okada ban: Lagos police impound 140 motorcycles, arrest passengers</p>
+  <p >Okada ban: Lagos police impound 140 motorcycles, arrest passengers</p>
  </a>
   <p class="para" style="font-family:sans-serif">By Kemisola Atiku
             </p>
   </div>
   <div class="col-sm">
 <a  href="#">
-  <img  style= "height:100px" src='images/PDP.jpg' alt="" />
+  <img class="img-body"  style= "max-width:100%;height:auto;display:block" src='images/PDP.jpg' alt="" />
           </a> 
  <a  href="#">
   <p>PDP delegate donates N12m received from aspirants to Kaduna constituents</p>
@@ -633,7 +685,7 @@
        </div>
        <div class="col-sm">
 <a href="#">    
- <img src='images/RESCUED LEKKI MAN.webp' style= "height:100px"  alt="" />
+ <img class="img-body" src='images/RESCUED LEKKI MAN.webp' style= "max-width:100%;height:auto;display:block"  alt="" />
           </a>
  <a  href="#">
 <p>Man rescued from committing suicide on Lekki-Ikoyi Bridge</p>
@@ -644,7 +696,7 @@
   
 <div class="col-sm">
   <a  href="#">    
-   <img src='images/APC FLAG.jpg' style= "height:100px"  alt="" />
+   <img class="img-body" src='images/APC FLAG.jpg' style= "max-width:100%;height:auto;display:block"  alt="" />
             </a>
    <a href="#">
 <p>FULL LIST: Sanwo-Olu, Malami, 16 govs, five ministers to chair APC convention sub-committees
@@ -655,31 +707,22 @@
   </div>
     
     </div>
+<br>
+<br>
 
 
-
-
-
-
-
-
-
-
-
-
-
-    
     <div class="row">
       <div class="col-sm">
-    <h3 id="politics"> <span>POLITICS<span class="mono">></span></span></h3>
+    <h3 class="mono-header" id="politics"> <span>POLITICS<span class="mono">></span></span></h3>
                   </h3>
           
       </div>
           </header>
-    
+        
+       
           <div class="col-sm">
     <a href="">
-      <img style= "height:100px" src='images/TINUBU.webp' alt="" />
+      <img class="img-body" style="max-width:100%;height:auto;display:block;" src='images/TINUBU.webp' alt="" />
               </a> 
      <a href="">
       <p>What Tinubu told APC presidential screening panel</p>
@@ -689,7 +732,7 @@
       </div>
       <div class="col-sm">
     <a    href="">
-      <img style= "height:100px" src='images/MARIAS.webp' alt="" />
+      <img class="img-body" style= "max-width:100%;height:auto;display:block" src='images/MARIAS.webp' alt="" />
               </a> 
      <a href="#">
       <p>After 10-year relationship, Maria’s ex-boyfriend battered, killed her for seeking better life with new lover – Sister</p>
@@ -700,7 +743,7 @@
            </div>
            <div class="col-sm">
     <a  href="">    
-     <img src='images/TECH.jpg' style= "height:100px"  alt="" />
+     <img class="img-body"  src='images/TECH.jpg' style= "max-width:100%;height:auto;display:block"  alt="" />
               </a>
      <a href="">
   <p>Password-stealing malware attacks rise by 146.65% in Nigeria –Report</p>
@@ -709,9 +752,9 @@
                  
     </div>
       
-    <div class="col-sm">
+    <div  class="col-sm">
       <a href="">    
-       <img src='images/PRESIDO.jpg' style= "height:100px"  alt="" />
+       <img class="img-body"src='images/PRESIDO.jpg' style="max-width:100%;height:auto;display:block"  alt="" />
                 </a>
        <a  href="#">
     <p>
@@ -722,10 +765,11 @@
                  </div>
         
         </div>
-        
+        <br>
+        <br>
 <div class="row">
   <div class="col-sm">
-<h3 id="business"> <span>BUSINESS<span class="mono">></span></span></h3>
+<h3 class="mono-header" id="business"> <span>BUSINESS<span class="mono">></span></span></h3>
               </h3>
        
   </div>
@@ -733,7 +777,7 @@
 
       <div class="col-sm">
 <a  href="">
-  <img style= "height:100px"  src='images/COURT.jpg' alt="" />
+  <img class="img-body" style= "max-width:100%;height:auto;display:block"  src='images/COURT.jpg' alt="" />
           </a> 
  <a  href="">
   <p>Alleged N2.9bn Fraud: Court Grants Rochas Okorocha N500m Bail
@@ -744,7 +788,7 @@
   </div>
   <div class="col-sm">
 <a   href="">
-  <img style= "height:100px" src='images/SPORT.jpg' alt="" />
+  <img class="img-body" style="max-width:100%;height:auto;display:block"src='images/SPORT.jpg' alt="" />
           </a> 
  <a  href="">
    <p>Mali Replaces D’Tigress At FIBA World Cup After FG’s Withdrawal</p>
@@ -754,7 +798,7 @@
        </div>
        <div class="col-sm">
 <a  href="#">    
- <img src='images/Queen-Elizabeth-II.jpg' style= "height:100px" alt="" />
+ <img class="img-body" src='images/Queen-Elizabeth-II.jpg' style= "max-width:100%;height:auto;display:block" alt="" />
           </a>
  <a  href="#">
    <p>Crowds Cheer Queen On Palace Balcony For Historic Jubilee</p>
@@ -765,7 +809,7 @@
   
 <div class="col-sm">
   <a  href="#">    
-   <img src='images/Samuel-Uche.jpg' style= "height:100px" alt="" />
+   <img class="img-body" src='images/Samuel-Uche.jpg' style= "max-width:100%;height:auto;display:block" alt="" />
             </a>
    <a href="">
 <p> Abducted Cleric Admits N100m Was Paid For His Release</p>
@@ -776,10 +820,11 @@
     
     </div>
     
-    
+   <br>
+   <br> 
     <div class="row">
       <div class="col-sm">
-    <h3 id="health"> <span>HEALTH WISE<span class="mono">></span></span></h3>
+    <h3 class="mono-header" id="health"> <span>HEALTH WISE<span class="mono">></span></span></h3>
                   </h3>
           
       </div>
@@ -787,7 +832,7 @@
     
           <div class="col-sm">
     <a href="">
-      <img style= "height:100px" src='images/TINUBU.webp' alt="" />
+      <img class="img-body" style= "max-width:100%;height:auto;display:block" src='images/TINUBU.webp' alt="" />
               </a> 
      <a href="">
       <p>What Tinubu told APC presidential screening panel</p>
@@ -797,7 +842,7 @@
       </div>
       <div class="col-sm">
     <a    href="">
-      <img style= "height:100px" src='images/MARIAS.webp' alt="" />
+      <img class="img-body" style= "max-width:100%;height:auto;display:block" src='images/MARIAS.webp' alt="" />
               </a> 
      <a href="#">
       <p>After 10-year relationship, Maria’s ex-boyfriend battered, killed her for seeking better life with new lover – Sister</p>
@@ -808,7 +853,7 @@
            </div>
            <div class="col-sm">
     <a  href="">    
-     <img src='images/TECH.jpg' style= "height:100px"  alt="" />
+     <img class="img-body" src='images/TECH.jpg' style="max-width:100%;height:auto;display:block"  alt="" />
               </a>
      <a href="">
   <p>Password-stealing malware attacks rise by 146.65% in Nigeria –Report</p>
@@ -819,7 +864,7 @@
       
     <div class="col-sm">
       <a href="">    
-       <img src='images/PRESIDO.jpg' style= "height:100px"  alt="" />
+       <img class="img-body" src='images/PRESIDO.jpg' style= "max-width:100%;height:auto;display:block"  alt="" />
                 </a>
        <a  href="#">
     <p>
@@ -830,11 +875,12 @@
                  </div>
         
         </div>
-  
+  <br>
+  <br>
     
     <div class="row">
       <div class="col-sm">
-    <h3 id="education"  ><span>EDUCATION<span class="mono">></span></span></h3>
+    <h3 class="mono-header" id="education"  ><span>EDUCATION<span class="mono">></span></span></h3>
                   </h3>
             
       </div>
@@ -842,7 +888,7 @@
     
           <div class="col-sm">
     <a  href="">
-      <img style= "height:100px" src='images/Kaduna.jpg' alt="" />
+      <img  class="img-body"style= "max-width:100%;height:auto;display:block"src='images/Kaduna.jpg' alt="" />
               </a> 
      <a  href="">
       <p>Several Abducted As Bandits Block Highway, Set Buses Ablaze In Kaduna</p>
@@ -852,7 +898,7 @@
       </div>
       <div class="col-sm">
     <a    href="">
-      <img style= "height:100px"  src='images/Peter-Umeadi.jpg' alt="" />
+      <img class="img-body" style= "max-width:100%;height:auto;display:block"  src='images/Peter-Umeadi.jpg' alt="" />
               </a> 
      <a href="">
    <p>EFCC Releases Suspended Accountant-General On Bail</p>
@@ -862,7 +908,7 @@
            </div>
            <div class="col-sm">
     <a  href="">    
-     <img src='images/EFCC.jpg' style= "height:100px"  alt="" />
+     <img  class="img-body"src='images/EFCC.jpg' style="max-width:100%;height:auto;display:block"  alt="" />
               </a>
      <a href="">
 <p>Ex-Chief Judge Peter Umeadi Wins APGA Presidential Ticket</p>
@@ -873,7 +919,7 @@
       
     <div class="col-sm">
       <a  href="">    
-       <img src='images/MOVIE.jpg' style= "height:100px"  alt="" />
+       <img class="img-body" src='images/MOVIE.jpg' style="max-width:100%;height:auto;display:block"  alt="" />
                 </a>
        <a  href="">
    <p>Defamation: Judge Awards $15m In Damages To Johnny Depp</p>
@@ -952,17 +998,14 @@ Viola Zhou</p>
  <br>
  <br>
  <br>
- <br>
- <br>
- <br>
- <br>
+
  <!--news-->
  <div class="container mt-5">
 <h2 id="news" class="text-center">NEWS</h4><br>
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm">
       <a href="">
-        <img style= width:150px  src='images/OKADA BAN2.jpg' alt="" />
+        <img class="img-body" style="max-width:100%;height:auto;display:block" src='images/OKADA BAN2.jpg' alt="" />
                 </a> 
        <a  href="#">
         <p>Okada ban: Lagos police impound 140 motorcycles, arrest passengers</p>
@@ -972,7 +1015,7 @@ Viola Zhou</p>
         </div>
         <div class="col-sm-2">
       <a  href="#">
-        <img  style= "height:100px" src='images/PDP.jpg' alt="" />
+        <img class="img-body"  style= "max-width:100%;height:auto;display:block"  style= "max-width:100%;height:auto;display:block" src='images/PDP.jpg' alt="" />
                 </a> 
        <a  href="#">
         <p>PDP delegate donates N12m received from aspirants to Kaduna constituents</p>
@@ -984,7 +1027,7 @@ Viola Zhou</p>
          
              <div class="col-sm-2">
               <a href="">
-                <img style= "height:100px" src='images/TINUBU.webp' alt="" />
+                <img  class="img-body"  style= "max-width:100%;height:auto;display:block"style= "max-width:100%;height:auto;display:block" src='images/TINUBU.webp' alt="" />
                         </a> 
                <a href="">
                 <p>What Tinubu told APC presidential screening panel</p>
@@ -994,7 +1037,7 @@ Viola Zhou</p>
                 </div>
                 <div class="col-sm-2">
               <a    href="">
-                <img style= "height:100px" src='images/MARIAS.webp' alt="" />
+                <img  class="img-body"  style= "max-width:100%;height:auto;display:block"style= "max-width:100%;height:auto;display:block" src='images/MARIAS.webp' alt="" />
                         </a> 
                <a href="#">
                 <p>After 10-year relationship, Maria’s ex-boyfriend battered, killed her for seeking better life with new lover – Sister</p>
@@ -1005,7 +1048,7 @@ Viola Zhou</p>
                      </div>
                      <div class="col-sm-2">
               <a  href="">    
-               <img src='images/TECH.jpg' style= "height:100px"  alt="" />
+               <img class="img-body"  style= "max-width:100%;height:auto;display:block" src='images/TECH.jpg' style= "max-width:100%;height:auto;display:block"  alt="" />
                         </a>
                <a href="">
             <p>Password-stealing malware attacks rise by 146.65% in Nigeria –Report</p>
@@ -1015,7 +1058,7 @@ Viola Zhou</p>
               </div>
       <div class="col-sm-2">
         <a  href="#">    
-         <img src='images/APC FLAG.jpg' style= "height:100px"  alt="" />
+         <img class="img-body"  style= "max-width:100%;height:auto;display:block" src='images/APC FLAG.jpg' style= "max-width:100%;height:auto;display:block"  alt="" />
                   </a>
          <a href="#">
       <p>FULL LIST: Sanwo-Olu, Malami, 16 govs, five ministers to chair APC convention sub-committees
@@ -1032,7 +1075,7 @@ Viola Zhou</p>
   
             <div class="col-sm-2">
               <a class="spotlight-story-image-wrapper" href="https://restofworld.org/2022/latin-america-startup-equity-data/">
-                <img style= width:100px  src='images/OKADA BAN2.jpg' alt="" />
+                <img class="img-body"  style= "max-width:100%;height:auto;display:block" style= "max-width:100%;height:auto;display:block"  src='images/OKADA BAN2.jpg' alt="" />
                         </a> 
                <a  href="#">
                 <p>Okada ban: Lagos police impound 140 motorcycles, arrest passengers</p>
@@ -1042,7 +1085,7 @@ Viola Zhou</p>
                 </div>
                 <div class="col-sm-2">
               <a  href="#">
-                <img  style= "height:100px" src='images/PDP.jpg' alt="" />
+                <img class="img-body"  style= "max-width:100%;height:auto;display:block"  style= "max-width:100%;height:auto;display:block" src='images/PDP.jpg' alt="" />
                         </a> 
                <a  href="#">
                 <p>PDP delegate donates N12m received from aspirants to Kaduna constituents</p>
@@ -1054,7 +1097,7 @@ Viola Zhou</p>
                      
       <div class="col-sm-2">
         <a  href="">
-          <img style= "height:100px"  src='images/COURT.jpg' alt="" />
+          <img class="img-body"  style= "max-width:100%;height:auto;display:block" style= "max-width:100%;height:auto;display:block"  src='images/COURT.jpg' alt="" />
                   </a> 
          <a  href="">
           <p>Alleged N2.9bn Fraud: Court Grants Rochas Okorocha N500m Bail
@@ -1065,7 +1108,7 @@ Viola Zhou</p>
           </div>
           <div class="col-sm-2">
         <a   href="">
-          <img style= "height:100px" src='images/SPORT.jpg' alt="" />
+          <img class="img-body"  style= "max-width:100%;height:auto;display:block" style= "max-width:100%;height:auto;display:block" src='images/SPORT.jpg' alt="" />
                   </a> 
          <a  href="">
            <p>Mali Replaces D’Tigress At FIBA World Cup After FG’s Withdrawal</p>
@@ -1075,7 +1118,7 @@ Viola Zhou</p>
                </div>
                 <div class="col-sm-2">
                   <a href="#">    
-                   <img src='images/RESCUED LEKKI MAN.webp' style= "height:100px"  alt="" />
+                   <img class="img-body"  style= "max-width:100%;height:auto;display:block" src='images/RESCUED LEKKI MAN.webp' style= "max-width:100%;height:auto;display:block"  alt="" />
                             </a>
                    <a  href="#">
                   <p>Man rescued from committing suicide on Lekki-Ikoyi Bridge</p>
@@ -1086,7 +1129,7 @@ Viola Zhou</p>
                       
               <div class="col-sm-2">
                 <a  href="#">    
-                 <img src='images/APC FLAG.jpg' style= "height:100px"  alt="" />
+                 <img class="img-body"  style= "max-width:100%;height:auto;display:block" src='images/APC FLAG.jpg' style= "max-width:100%;height:auto;display:block"  alt="" />
                           </a>
                  <a href="#">
               <p>FULL LIST: Sanwo-Olu, Malami, 16 govs, five ministers to chair APC convention sub-committees
@@ -1104,7 +1147,7 @@ Viola Zhou</p>
   
       <div class="col-sm-2">
         <a  href="">
-          <img style= width:100px  src='images/OKADA BAN2.jpg' alt="" />
+          <img  class="img-body"  style= "max-width:100%;height:auto;display:block"style= "max-width:100%;height:auto;display:block" src='images/OKADA BAN2.jpg' alt="" />
                   </a> 
          <a  href="#">
           <p>Okada ban: Lagos police impound 140 motorcycles, arrest passengers</p>
@@ -1114,7 +1157,7 @@ Viola Zhou</p>
           </div>
           <div class="col-sm-2">
         <a  href="#">
-          <img  style= "height:100px" src='images/PDP.jpg' alt="" />
+          <img class="img-body"  style= "max-width:100%;height:auto;display:block"  style= "max-width:100%;height:auto;display:block" src='images/PDP.jpg' alt="" />
                   </a> 
          <a  href="#">
           <p>PDP delegate donates N12m received from aspirants to Kaduna constituents</p>
@@ -1126,7 +1169,7 @@ Viola Zhou</p>
          
                <div class="col-sm-2">
                 <a  href="">
-                  <img style= "height:100px" src='images/Kaduna.jpg' alt="" />
+                  <img class="img-body"  style= "max-width:100%;height:auto;display:block" style=  "max-width:100%;height:auto;display:block" src='images/Kaduna.jpg' alt="" />
                           </a> 
                  <a  href="">
                   <p>Several Abducted As Bandits Block Highway, Set Buses Ablaze In Kaduna</p>
@@ -1136,7 +1179,7 @@ Viola Zhou</p>
                   </div>
                   <div class="col-sm-2">
                 <a    href="">
-                  <img style= "height:100px"  src='images/Peter-Umeadi.jpg' alt="" />
+                  <img class="img-body"  style= "max-width:100%;height:auto;display:block" style= "max-width:100%;height:auto;display:block"  src='images/Peter-Umeadi.jpg' alt="" />
                           </a> 
                  <a href="">
                <p>EFCC Releases Suspended Accountant-General On Bail</p>
@@ -1146,7 +1189,7 @@ Viola Zhou</p>
                        </div>
                        <div class="col-sm-2">
                 <a  href="">    
-                 <img src='images/EFCC.jpg' style= "height:100px"  alt="" />
+                 <img class="img-body"  style= "max-width:100%;height:auto;display:block" src='images/EFCC.jpg' style= "max-width:100%;height:auto;display:block"  alt="" />
                           </a>
                  <a href="">
             <p>Ex-Chief Judge Peter Umeadi Wins APGA Presidential Ticket</p>
@@ -1159,7 +1202,7 @@ Viola Zhou</p>
                 
         <div class="col-sm-2">
           <a  href="#">    
-           <img src='images/APC FLAG.jpg' style= "height:100px"  alt="" />
+           <img class="img-body"  style= "max-width:100%;height:auto;display:block" src='images/APC FLAG.jpg' style= "max-width:100%;height:auto;display:block"  alt="" />
                     </a>
            <a href="#">
         <p>FULL LIST: Sanwo-Olu, Malami, 16 govs, five ministers to chair APC convention sub-committees
@@ -1182,69 +1225,48 @@ Viola Zhou</p>
 </div>
 <hr>
   <hr>
-<footer>
-  <div class="row bg-success text-white">
-    <div style="margin-top:60px"  class="col-sm-4">
-<ul style="list-style-type:  none">
-  
-    <li>  News</li>
-      <li>Sports</li>
-        <li>Metro Plus</li>
-          <li>Politics</li>
-            <li>Featured</li>
-<li>Latest News</li>
-<li>Business</li>
-  <li>Cartoon</li>
-    <li>Columns</li>
-      <li>Diaspora</li>
-        <li>Advertise with us</li>
-</ul>
-    </div>
-    <div style="margin-top:60px"  class="col-sm-4">
-<ul style="list-style-type:  none">
-  <li>Business & Economy</li>
-    <li>Opinion</li>
-      <li>Entertainment</li>
-        <li>Auto Famous</li>
-          <li>Auto Punch</li>
-            <li>Barka Da Sallah</li>
-              <li>Barrier Breakers</li>
-                <li> Case Review</li>
-                  <li>Court News</li>
-                    <li>Court Trivia</li>
-                      <li>Campus Champion</li>
-                        <li>Celebrity</li>
-                          <li>City round</li>
-                            <li>Interview</li>
-</ul>
-</div>
-    <div style="margin-top:60px"  class="col-sm-4">
+  <footer>
+      <div class="row bg-success text-white">
+        <div style="margin-top:60px"  class="col-sm-4">
+    <ul style="list-style-type:  none">
+      
+        <li>  News</li>
+          <li>Sports</li>
+            <li>Metro Plus</li>
+              <li>Politics</li>
+                <li>Featured</li>
    
-<ul style="list-style-type: none;">
- <li> Breaking News</li>
-  <li>Brexit</li>
-    <li>Columns</li>
-      <li>Corona</li>
-        <li>Anti-corruption</li>
-          <li>Biafra</li>
-            <li>Boko Haram</li>
-             <li> Panorama</li>
-              <li>Opinion</li>
-                <li>Special Features</li>
-                  <li>Spice</li>
-                    <li>Technology</li>
-                      <li>Famous Parent</li>
-<li>Education</li>
-</ul>
-</div>
-<hr>
-<hr>
-          <p class="text-center">© 2022 Vanguard Media Limited, Nigeria.</p>
-<!---social media handels----->
-</div>
-</footer>
+    </ul>
+        </div>
+        <div style="margin-top:60px"  class="col-sm-4">
+    <ul style="list-style-type:  none">
+      <li>Business & Economy</li>
+        <li>Opinion</li>
+          <li>Entertainment</li>
+            <li>Auto Famous</li>
+              <li>Auto Punch</li>
+            
+    </ul>
+    </div>
+        <div style="margin-top:60px"  class="col-sm-4">
+       
+    <ul style="list-style-type: none;">
+     <li> Breaking News</li>
+      <li>Brexit</li>
+        <li>Columns</li>
+           <li>Famous Parent</li>
+    <li>Education</li>
+    </ul>
+    </div>
+    <hr>
+    <hr>
+              <p class="text-center">© 2022 Vanguard Media Limited, Nigeria.</p>
+    <!---social media handels----->
+    </div>
+    </footer>
+</body>
+<button style="margin:30px 600px" class="btn btn-success text-white"><a class="footer-a" href="sign up.html">Hey! Sign Up</a></button>
 
-<button style="margin:30px 600px" class="btn btn-success"><a href="sign up.html">Hey! Sign Up</a></button>
-<div id="info" class="collapse">
+
 
 
